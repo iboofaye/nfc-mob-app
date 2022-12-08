@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OMNIRIS NFC Tag Reader/Writer</string>
+    <string name="lire_un_tag">Lire un tag NFC</string>
+    <string name="ecrire_un_tag">Ecrire un tag NFC</string>
+    <string name="un_tag_nfc_a_ete_ecrit">"Un tag NFC a été écrit"</string>
+    <string name="ceci_est_le_contenu_du_tag_nfc">Ceci est le contenu du tag NFC</string>
+    <string name="erreur_durant_ecriture_du_tag">"Une erreur s'est produite durant l'écriture du tag"</string>
+</resources>

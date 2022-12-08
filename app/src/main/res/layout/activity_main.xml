@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/input_group"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Read NFC Data"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Approchez le tag NFC de l'appareil !"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="344dp"
+            android:layout_height="164dp"
+            app:srcCompat="@drawable/dd_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_group"
+        android:layout_width="386dp"
+        android:layout_height="445dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtviewsdata"
+            android:layout_width="329dp"
+            android:layout_height="209dp"
+            android:background="#DDDADA"
+            android:fontFamily="sans-serif"
+            android:scrollbars="vertical"
+            android:text="information will be here!"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Tous les contenus lus s'afficheront en haut !"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnwrite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Ecrire NFC!"
+            android:textAllCaps="false"
+            android:textColor="#0099ff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Omniris Testes NFC"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_dark"
+            android:textSize="13sp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
